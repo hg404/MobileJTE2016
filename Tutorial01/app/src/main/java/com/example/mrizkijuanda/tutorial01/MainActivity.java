@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,4 +51,28 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onClickTerjemahkan(View view) {
+        TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
+        Button btnTerjemahkan = (Button) findViewById(R.id.btnTerjemahkan);
+        if (bahasaIndonesia == false) {
+            String indonesia = getString(R.string.TERJEMAHKAN_KE_INDONESIA);
+            String apakabar = getString(R.string.TULISAN_APA_KABAR_DUNIA);
+            txtTulisan.setText(apakabar);
+            btnTerjemahkan.setText(indonesia);
+            bahasaIndonesia = true;
+
+        } else {
+            String inggris = getString(R.string.TERJEMAHKAN_KE_INGGRIS);
+            String helloWorld = getString(R.string.TULISAN_HELLO_WORLD);
+            txtTulisan.setText(helloWorld);
+            btnTerjemahkan.setText(inggris);
+            bahasaIndonesia = false;
+
+
+        }
+    }
+
+    private boolean bahasaIndonesia = false;
+
 }

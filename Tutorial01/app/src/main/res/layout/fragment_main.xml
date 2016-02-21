@@ -10,8 +10,21 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:text="@string/TULISAN_HELLO_WORLD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/txtTulisan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TULISAN_TERJEMAHKAN"
+        android:id="@+id/btnTerjemahkan"
+        android:layout_below="@+id/txtTulisan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickTerjemahkan" />
+
+
 
 </RelativeLayout>
