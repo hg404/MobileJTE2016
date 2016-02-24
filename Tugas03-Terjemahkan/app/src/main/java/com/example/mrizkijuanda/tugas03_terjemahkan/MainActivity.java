@@ -54,34 +54,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickTerjemahkanIndonesia(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        RadioButton radiobtnTerjemahkanIndonesia = (RadioButton) findViewById(R.id.radiobtnTerjemahIndonesia);
-
-        String indonesia = getString(R.string.TERJEMAHKAN_KE_INDONESIA);
         String apakabar = getString(R.string.TULISAN_APAKABAR_DUNIA);
         txtTulisan.setText(apakabar);
-        radiobtnTerjemahkanIndonesia.setText(indonesia);
-
     }
 
-    public void onClickTerjemahkanAceh(View view) {
-        TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        RadioButton radiobtnTerjemahkanAceh = (RadioButton) findViewById(R.id.radiobtnTerjemahAceh);
 
-        String aceh = getString(R.string.TERJEMAHKAN_KE_ACEH);
+   public void onClickTerjemahkanAceh(View view) {
+        TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
         String peuhaba = getString(R.string.TULISAN_PEUHABA_DONYA);
         txtTulisan.setText(peuhaba);
-        radiobtnTerjemahkanAceh.setText(aceh);
 
     }
 
     public void onClickTerjemahkanInggris(View view) {
         TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        RadioButton radiobtnTerjemahkanInggris = (RadioButton) findViewById(R.id.radiobtnTerjemahInggris);
-
-        String inggris = getString(R.string.TERJEMAHKAN_KE_INGGRIS);
         String helloword = getString(R.string.TULISAN_HELLO_WORD);
         txtTulisan.setText(helloword);
-        radiobtnTerjemahkanInggris.setText(inggris);
 
     }
+
 }
