@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalkulator3</string>
+    <string name="action_settings">Settings</string>
+    <string name="operasiTambah">+</string>
+    <string name="operasiKurang">-</string>
+    <string name="operasiKali">*</string>
+    <string name="operasiBagi">/</string>
+
+</resources>
