@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TutorialFragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="HELLO_WORD">HELLO WORD ..</string>
+</resources>
