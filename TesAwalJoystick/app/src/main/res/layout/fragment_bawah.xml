@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mrizkijuanda.tesawaljoystick.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y+1"
+        android:id="@+id/yTambah"
+        android:onClick="onClickButton"
+        android:layout_above="@+id/yKurang"
+        android:layout_alignLeft="@+id/yKurang"
+        android:layout_alignStart="@+id/yKurang" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-1"
+        android:id="@+id/yKurang"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X-1"
+        android:id="@+id/xKurang"
+        android:onClick="onClickButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X+1"
+        android:id="@+id/xTambah"
+        android:onClick="onClickButton"
+        android:layout_above="@+id/xKurang"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z+1"
+        android:id="@+id/zTambah"
+        android:onClick="onClickButton"
+        android:layout_alignTop="@+id/yTambah"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z-1"
+        android:id="@+id/zKurang"
+        android:layout_alignBottom="@+id/yKurang"
+        android:layout_alignLeft="@+id/zTambah"
+        android:layout_alignStart="@+id/zTambah" />
+
+</RelativeLayout>
