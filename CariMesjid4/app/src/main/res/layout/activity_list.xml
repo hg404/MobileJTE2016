@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.mrizkijuanda.carimesjid.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn1"
+            android:text="Masjid Jamik Unsyiah"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn1"
+            android:id="@+id/btn2"
+            android:text="MASJID POLDA"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn2"
+            android:id="@+id/btn3"
+            android:text="MASJID OMAN"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn3"
+            android:id="@+id/btn4"
+            android:text="MASJID RAYA BAITURRAHMAN"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn4"
+            android:id="@+id/btn5"
+            android:text="MASJID PUTIH"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn5"
+            android:id="@+id/btn6"
+            android:text="MASJID BAITUL HALIM "
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn6"
+            android:id="@+id/btn7"
+            android:text="MASJID TUNGKOP"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn7"
+            android:id="@+id/btn8"
+            android:text="MASJID TANJUNG SELAMAT"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn8"
+            android:id="@+id/btn9"
+            android:text="MASJID FATHUN QARIB"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn9"
+            android:id="@+id/btn10"
+            android:text="MASJID ASKOPMA RUKOH"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn10"
+            android:id="@+id/btn11"
+            android:text="MASJID AL-WUTHA"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn11"
+            android:id="@+id/btn12"
+            android:text="MASJID IBNU SINA"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn12"
+            android:id="@+id/btn13"
+            android:text="MASJID RAUDHATUL JANNAH"
+            android:onClick="onClickMapList" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn13"
+            android:id="@+id/btn14"
+            android:text="MASJID AL BADAR"
+            android:onClick="onClickMapList" />
+    </LinearLayout>
+</ScrollView>
+
