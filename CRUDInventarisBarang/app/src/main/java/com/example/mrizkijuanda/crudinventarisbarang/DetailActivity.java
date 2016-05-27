@@ -71,11 +71,7 @@ public class DetailActivity extends AppCompatActivity {
         int posisi = Integer.parseInt(gambar);
         spinner.setSelection(posisi);
 
-        /* EditText txtGambar = (EditText) findViewById(R.id.txtGambar);
-        String [] namaGambar = {"","CPU","Mouse","Speaker","Keyboard","Monitor"};
-        int posisi = Integer.parseInt(gambar);
-        txtGambar.setText(namaGambar[posisi]);
-        */
+
     }
 
     public void clickBtnUbah(View view){
@@ -90,11 +86,8 @@ public class DetailActivity extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         spinner.setEnabled(true);
 
-       /* EditText txtGambar = (EditText) findViewById(R.id.txtGambar);
-        txtGambar.setVisibility(View.GONE);
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        spinner.setVisibility(View.VISIBLE);
-*/
+
+
         Button btnHapus = (Button)findViewById(R.id.btnHapus);
         btnHapus.setVisibility(View.GONE);
 
