@@ -5,17 +5,12 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.maps.model.*;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -26,7 +21,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
+public class Maps_list_Pidie extends ActionBarActivity implements OnMapReadyCallback {
     GoogleMap gMaps;
     String nama;
 
@@ -50,9 +45,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.570813, 95.371471))
+                        .position(new LatLng(5.380934, 95.957858))
                         .visible(true)
-                        .title("masjid jamik unsyiah"));
+                        .title("Masjid Al Falah"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -64,7 +59,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.570813, 95.371471)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.380934, 95.957858)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {
@@ -74,9 +69,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.576526, 95.347824))
+                        .position(new LatLng(5.355098, 95.962848))
                         .visible(true)
-                        .title("MASJID BABUTAQWA"));
+                        .title("Masjid Runtoh Tijue"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -88,7 +83,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.576526, 95.347824)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.355098, 95.962848)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {
@@ -100,9 +95,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.567396, 95.338656))
+                        .position(new LatLng(5.281719, 95.977257))
                         .visible(true)
-                        .title("MASJID AGUNG AL MAKMUR"));
+                        .title("Masjid Abu Daud Beureueh"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -114,7 +109,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.567396, 95.338656)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.281719, 95.977257)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {
@@ -124,9 +119,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.553695, 95.317064))
+                        .position(new LatLng(5.275507, 95.983250))
                         .visible(true)
-                        .title("MASJID RAYA BAITURRAHMAN"));
+                        .title("Masjid Beurunuen"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -138,7 +133,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.553695, 95.317064)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.275507, 95.983250)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {
@@ -150,9 +145,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.572934, 95.362081))
+                        .position(new LatLng(5.303518, 96.013809))
                         .visible(true)
-                        .title("MASJID AL HASYIMI"));
+                        .title("Masjid Kembang Tanjong"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -164,7 +159,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.572934, 95.362081)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.303518, 96.013809)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {
@@ -174,9 +169,9 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                 initializeMaps();
                 gMaps.addMarker(new MarkerOptions()
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic))
-                        .position(new LatLng(5.536532, 95.307286))
+                        .position(new LatLng(5.347175, 95.990621))
                         .visible(true)
-                        .title("MASJID TEUKU UMAR"));
+                        .title("Masjid Simpang Tiga"));
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions
@@ -188,7 +183,7 @@ public class Maps_list extends ActionBarActivity implements OnMapReadyCallback {
                     return;
                 }
                 gMaps.setMyLocationEnabled(true);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.536532, 95.307286)).zoom(15).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(5.347175, 95.990621)).zoom(15).build();
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 gMaps.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
             } catch (Exception e) {

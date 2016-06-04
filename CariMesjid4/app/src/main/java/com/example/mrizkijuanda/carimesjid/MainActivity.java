@@ -1,5 +1,6 @@
 package com.example.mrizkijuanda.carimesjid;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -11,13 +12,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.ic_launcher);
     }
     public void maps(View view){
         Intent intent = new Intent(this, Maps.class);
         startActivity(intent);
     }
-    public void list(View view){
-        Intent intent = new Intent(this, List.class);
+    public void listpilih(View view){
+        Intent intent = new Intent(this, ListPilih.class);
         startActivity(intent);
     }
 
